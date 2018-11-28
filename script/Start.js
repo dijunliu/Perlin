@@ -5,14 +5,14 @@ window.onload = function () {
     canvas2 = document.getElementById('AnimateCanvas2');
     context2 = canvas2.getContext('2d');
     //初始化rect对象
-    rect = new Rect(canvas2.width/2,canvas2.height/2,2,1);
+    rect = new Rect(canvas2.width/2,canvas2.height/2,2,2);
     PLtime = 0;
 
     pi = Math.PI;
     ampmax = 10; //振幅
     fremax = 1; //波长
     num = 5;
-    dunum = 30;
+    dunum = 100;
     currentPoint ={x:0,y:0};
 
     context.translate(0,canvas.height/2);
