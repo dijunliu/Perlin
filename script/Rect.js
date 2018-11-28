@@ -7,6 +7,6 @@ function Rect(x,y,width, height) {
 Rect.prototype.draw = function (context) {
     context.save();
     context.translate(this.x,this.y);
-    context.fillRect(this.x,this.y,this.width,this.height);
+    context.fillRect(0,0,this.width,this.height);
     context.restore();
 }

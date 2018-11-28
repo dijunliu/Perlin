@@ -1,8 +1,10 @@
 function drawAnimation() {
     window.requestAnimationFrame(drawAnimation);
-    var y = Math.sin(angle/fre*Math.PI*2)*amp;
-    context.lineTo(x,y);
-    context.stroke();
-    angle += Math.PI/180;
-    x =angle;
+    // context2.clearRect(0,0,canvas2.width,canvas2.height);
+
+    rect.x += Perlindata[1000+PLtime].y/100;
+    rect.y += Perlindata[2000+PLtime].y/100;
+
+    rect.draw(context2);
+    PLtime++;
 }
